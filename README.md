@@ -90,6 +90,14 @@ sudo docker run -d \
 
 * You may change `MyRuntimeName` to any name you prefer.
 * This runtime will be visible in digital.auto Playground.
+* Test it with the custom sdv-runtime by using this command, make sure you dont have any other runtime running.
+
+```bash
+sudo docker run -d \
+  -e RUNTIME_NAME="MyRuntimeName" \
+  -p 55555:55555 \
+  ghcr.io/rayy2002/sdv-runtime
+```
 
 ---
 
